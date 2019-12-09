@@ -1,0 +1,222 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 28, 2019, 7:14:27 PM
+    Author     : Owner
+*/
+/******************************
+Flexbox Layout
+*******************************/
+
+.header, .nav {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.header {
+  justify-content: space-between;
+}
+h1{
+    color: white;
+}
+.nav {
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+@media all and (min-width: 640px) {
+  .header, .nav {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media all and (min-width: 1030px) {
+  .nav {
+    -webkit-flex: none;
+    flex: none;
+  }
+}
+
+
+/******************************
+Treehouse Styling
+*******************************/
+
+body {
+  margin: 0;
+  font-family: Helvetica;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/25480/hero-img.jpg') no-repeat;
+  background-size:cover;
+  background-color: #046A38;
+  
+  
+}
+
+.header {
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav li {
+  margin: 12px 0 12px 28px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.nav li a:hover {
+  color: rgba(255,255,255,0.7);
+}
+
+.nav li a {
+  background: rgba(255,255,255,0.3);
+  border-radius: 2px;
+  transition: 200ms ease-in-out;
+  padding: 8px 16px 7px;
+}
+
+.nav li a:hover {
+  background: rgba(255,255,255,0.5);
+  color: #fff;
+}
+
+@media all and (min-width: 1030px) {
+  .header {
+    width: 1030px;
+    min-width: 768px;
+  }
+}
+
+/******************************
+Body Layout
+*******************************/
+
+
+.covertext {
+  position: absolute; /* To make the div to be place anywhere. It is out of the document flow */
+  top: 200px; /* The distance between the div with the top of document */
+  left: 0px; /* Make the div full width */
+  right: 0px; /* Make the div full width */
+}
+
+.title {
+  font-family: Verdana;
+  font-weight: 600;
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color:white;
+}
+h4 {
+    text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color:black;
+}
+
+.explore {
+  text-align: center;
+  margin-top: 10px;
+}
+.line1{
+    font-family: Verdana;
+    color: #B9975B;
+}
+.line2{
+    font-family: Verdana;
+    color: #046A38;
+}
+.line3{
+    font-family: Verdana;
+    color: #27251F;
+}
+.explore .btn-lg,
+.explore .btn-lg:hover {
+  border-radius: 30px;
+  padding: 15px 25px;
+  font-size: 22px;
+  background-image: none;
+  background-color: #FF4000;
+  border-color: #FF4000;
+  color: #ffffff;
+}
+/******************************
+Footer Styling
+*******************************/
+footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ text-align: center;
+}
+
+/******************************
+Login Styling
+*******************************/ 
+
+.register, .login {
+  background: #eee !important;
+}
+
+.wrapper {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.form-signin .form-signin-heading,
+
+
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+div.field {
+    margin-bottom: 10px;
+}
